@@ -1,0 +1,86 @@
+.calculator{
+  width: 300px;
+  background-color: #f5e400;
+  margin: 50px auto 10px auto;
+  padding: 7px;
+  border-radius: 5px;
+  display: block;
+
+}
+h1{
+  text-align: center;
+}
+
+#layar{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 0, 85);
+  padding: 7px 5px;
+  text-align: right;
+  outline: none;
+}
+
+.container-tombol{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tombol{
+  display: flex;
+  width: 25%;
+  font-size: 20px;
+  color: rgb(255, 0, 170);
+  font-weight: bold;
+  height: 70px;
+  border: 1px solid #cecece;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.tombol:nth-child(4n+1){
+  border-left: 1px solid #cecece;
+}
+
+.tombol:hover{
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+#nol{
+  flex-grow: 2;
+}
+#operator{
+  background-color: rgb(127, 255, 148);
+}
+
+
+#hitung{
+  background-color: rgb(71, 250, 0);
+  color: white;
+}
+
+#hitung:hover{
+  background-color: rgb(239, 248, 240);
+  cursor: pointer;
+}
+
+footer{
+  padding: 5px;
+}
+footer li{
+  list-style: none;
+}
+footer a{
+  color: rgb(255, 255, 255);
+}
+
+/*PHP*/
+@media(max-width:576px){
+  .calculator{
+      width: 90%;
+      height: 90%;
+  }
+}
